@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\mchau\Desktop\Taha_Martin_EcranLCD\EcranLCD_Schema_V1\EcranLCD_Schema_V1.kicad_sch</source>
+    <date>18/09/2023 17:15:31</date>
+    <tool>Eeschema 7.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>EcranLCD_Schema_V1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c56ccb5-0b35-4e82-b5a4-aedae57f554d</tstamps>
+    </comp>
+    <comp ref="DIS1">
+      <value>HD44780</value>
+      <libsource lib="HD44780" part="HD44780" description=""/>
+      <property name="MF" value=""/>
+      <property name="Description" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="MP" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="VOLTAGE" value=""/>
+      <property name="Availability" value=""/>
+      <property name="MGF#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48e0dc78-3740-4982-a993-5ed8bfd9d748</tstamps>
+    </comp>
+    <comp ref="HE_10">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise" description="Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9cb82e07-3a4d-4bb5-b5f3-e129002213dc</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>AVR-ISP-6</value>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="AVR-ISP-6" description="Atmel 6-pin ISP connector"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <property name="ki_description" value="Atmel 6-pin ISP connector"/>
+      <property name="ki_keywords" value="AVR ISP Connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>789c8a2e-9dbe-4eb9-9f74-9abde0385887</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>R_Potentiometer</value>
+      <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <property name="ki_description" value="Potentiometer"/>
+      <property name="ki_keywords" value="resistor variable"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d9df008-de40-4135-8e9c-85b06706f4b7</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ATmega328P-P</value>
+      <footprint>Package_DIP:DIP-28_W7.62mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATmega" part="ATmega328P-P" description="20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="EcranLCD_Schema_V1.kicad_sch"/>
+      <property name="ki_description" value="20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"/>
+      <property name="ki_keywords" value="AVR 8bit Microcontroller MegaAVR PicoPower"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81bc9991-5f2c-4a55-a8f5-b7a532535713</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="AVR-ISP-6">
+      <description>Atmel 6-pin ISP connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>IDC?Header*2x03*</fp>
+        <fp>Pin?Header*2x03*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AVR-ISP-6</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MISO" type="passive"/>
+        <pin num="2" name="VCC" type="passive"/>
+        <pin num="3" name="SCK" type="passive"/>
+        <pin num="4" name="MOSI" type="passive"/>
+        <pin num="5" name="~{RST}" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise">
+      <description>Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Counter_Clockwise</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HD44780" part="HD44780">
+      <fields>
+        <field name="Reference">DIS1</field>
+        <field name="Value">HD44780</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="bidirectional"/>
+        <pin num="2" name="" type="bidirectional"/>
+        <pin num="3" name="" type="bidirectional"/>
+        <pin num="4" name="" type="bidirectional"/>
+        <pin num="5" name="" type="bidirectional"/>
+        <pin num="6" name="" type="bidirectional"/>
+        <pin num="7" name="" type="bidirectional"/>
+        <pin num="8" name="" type="bidirectional"/>
+        <pin num="9" name="" type="bidirectional"/>
+        <pin num="10" name="" type="bidirectional"/>
+        <pin num="11" name="" type="bidirectional"/>
+        <pin num="12" name="" type="bidirectional"/>
+        <pin num="13" name="" type="bidirectional"/>
+        <pin num="14" name="" type="bidirectional"/>
+        <pin num="15" name="" type="bidirectional"/>
+        <pin num="16" name="" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATmega" part="ATmega328P-P">
+      <description>20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega328P-P</field>
+        <field name="Footprint">Package_DIP:DIP-28_W7.62mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RESET}/PC6" type="bidirectional"/>
+        <pin num="2" name="PD0" type="bidirectional"/>
+        <pin num="3" name="PD1" type="bidirectional"/>
+        <pin num="4" name="PD2" type="bidirectional"/>
+        <pin num="5" name="PD3" type="bidirectional"/>
+        <pin num="6" name="PD4" type="bidirectional"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="XTAL1/PB6" type="bidirectional"/>
+        <pin num="10" name="XTAL2/PB7" type="bidirectional"/>
+        <pin num="11" name="PD5" type="bidirectional"/>
+        <pin num="12" name="PD6" type="bidirectional"/>
+        <pin num="13" name="PD7" type="bidirectional"/>
+        <pin num="14" name="PB0" type="bidirectional"/>
+        <pin num="15" name="PB1" type="bidirectional"/>
+        <pin num="16" name="PB2" type="bidirectional"/>
+        <pin num="17" name="PB3" type="bidirectional"/>
+        <pin num="18" name="PB4" type="bidirectional"/>
+        <pin num="19" name="PB5" type="bidirectional"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+        <pin num="23" name="PC0" type="bidirectional"/>
+        <pin num="24" name="PC1" type="bidirectional"/>
+        <pin num="25" name="PC2" type="bidirectional"/>
+        <pin num="26" name="PC3" type="bidirectional"/>
+        <pin num="27" name="PC4" type="bidirectional"/>
+        <pin num="28" name="PC5" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="HD44780">
+      <uri>C:/Users/mchau/Desktop/Taha_Martin_EcranLCD/Composants/HD44780.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Microchip_ATmega">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/MCU_Microchip_ATmega.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="DIS1" pin="15" pintype="bidirectional"/>
+      <node ref="DIS1" pin="2" pintype="bidirectional"/>
+      <node ref="HE_10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="VCC" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="AVCC" pintype="power_in"/>
+      <node ref="U1" pin="7" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="BIT0">
+      <node ref="DIS1" pin="7" pintype="bidirectional"/>
+      <node ref="U1" pin="2" pinfunction="PD0" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="BIT1">
+      <node ref="DIS1" pin="8" pintype="bidirectional"/>
+      <node ref="U1" pin="3" pinfunction="PD1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="BIT2">
+      <node ref="DIS1" pin="9" pintype="bidirectional"/>
+      <node ref="U1" pin="4" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="BIT3">
+      <node ref="DIS1" pin="10" pintype="bidirectional"/>
+      <node ref="U1" pin="5" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="BIT4">
+      <node ref="DIS1" pin="11" pintype="bidirectional"/>
+      <node ref="U1" pin="6" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="BIT5">
+      <node ref="DIS1" pin="12" pintype="bidirectional"/>
+      <node ref="U1" pin="11" pinfunction="PD5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="BIT6">
+      <node ref="DIS1" pin="13" pintype="bidirectional"/>
+      <node ref="U1" pin="12" pinfunction="PD6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="BIT7">
+      <node ref="DIS1" pin="14" pintype="bidirectional"/>
+      <node ref="U1" pin="13" pinfunction="PD7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="CS">
+      <node ref="HE_10" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PB2" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="ENABLE">
+      <node ref="DIS1" pin="6" pintype="bidirectional"/>
+      <node ref="U1" pin="25" pinfunction="PC2" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="DIS1" pin="1" pintype="bidirectional"/>
+      <node ref="DIS1" pin="16" pintype="bidirectional"/>
+      <node ref="HE_10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="13" name="MISO">
+      <node ref="HE_10" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="MISO" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="PB4" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="MOSI">
+      <node ref="HE_10" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="MOSI" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="PB3" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="Net-(DIS1-Pad3)">
+      <node ref="DIS1" pin="3" pintype="bidirectional"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(U1-AREF)">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="AREF" pintype="passive"/>
+    </net>
+    <net code="17" name="RS">
+      <node ref="DIS1" pin="4" pintype="bidirectional"/>
+      <node ref="U1" pin="23" pinfunction="PC0" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="RST">
+      <node ref="HE_10" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PB1" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="RSTISP">
+      <node ref="J1" pin="5" pinfunction="~{RST}" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="~{RESET}/PC6" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="R{slash}W">
+      <node ref="DIS1" pin="5" pintype="bidirectional"/>
+      <node ref="U1" pin="24" pinfunction="PC1" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="SCK">
+      <node ref="HE_10" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="SCK" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="PB5" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="unconnected-(HE_10-Pin_4-Pad4)">
+      <node ref="HE_10" pin="4" pinfunction="Pin_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-PB0-Pad14)">
+      <node ref="U1" pin="14" pinfunction="PB0" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="unconnected-(U1-PC3-Pad26)">
+      <node ref="U1" pin="26" pinfunction="PC3" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="unconnected-(U1-PC4-Pad27)">
+      <node ref="U1" pin="27" pinfunction="PC4" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="unconnected-(U1-PC5-Pad28)">
+      <node ref="U1" pin="28" pinfunction="PC5" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(U1-XTAL1{slash}PB6-Pad9)">
+      <node ref="U1" pin="9" pinfunction="XTAL1/PB6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U1-XTAL2{slash}PB7-Pad10)">
+      <node ref="U1" pin="10" pinfunction="XTAL2/PB7" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

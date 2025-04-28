@@ -1,0 +1,33 @@
+------------------------------------------------
+|*****BIENVENUE SUR MON JEU SAPCE INVADERS*****|
+------------------------------------------------
+
+BUT DU JEU :
+Détruire tout les ennemis avant qu'ils ne vous tuent 3 fois ou ne vous touchent.
+
+Vous pouvez modifier le nombre de vies que vous possédez.
+Mais attention pour cela il vous faudra augmenter MaxLutin dans libgraph.h sous peine d'avoir une erreur de segmentation.
+
+COMMENT JOUER :
+Q pour aller à gauche
+D pour aller à droite
+Z pour tirer
+M pour quitter le jeu à n'importe quel moment
+
+LANCER LE JEU:
+Allez dans Graphique, faire make
+Allez dans Main, faire make
+Puis toujours dans Main, faire ./Jeu
+
+SPECIFICITES:
+Vous ne pouvez tirer que un missile à la fois
+Seul les enemies les plus bas de leur colonne peuvent drop des bombes
+
+Beaucoup de parametres sont modifiables :
+Vitesse de jeu, Nombre d'ennemis, Vitesse des projectiles ....
+
+Toutes les listes sont allouées et désallouées dynamiquement.
+
+-------------------
+|*****BON JEU*****|
+-------------------

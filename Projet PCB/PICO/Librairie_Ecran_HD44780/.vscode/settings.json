@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "hd44780_private.h": "c"
+    }
+}

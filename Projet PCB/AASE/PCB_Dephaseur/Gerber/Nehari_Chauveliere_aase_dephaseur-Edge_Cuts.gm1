@@ -1,0 +1,26 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,6.0.11+dfsg-1*
+G04 #@! TF.CreationDate,2024-04-10T12:01:03+02:00*
+G04 #@! TF.ProjectId,Nehari_Chauveliere_aase_dephaseur,4e656861-7269-45f4-9368-617576656c69,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.11+dfsg-1) date 2024-04-10 12:01:03*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,Profile*
+%ADD10C,0.100000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X111506000Y-68072000D02*
+X155956000Y-68072000D01*
+X155956000Y-68072000D02*
+X155956000Y-91821000D01*
+X155956000Y-91821000D02*
+X111506000Y-91821000D01*
+X111506000Y-91821000D02*
+X111506000Y-68072000D01*
+M02*

@@ -1,0 +1,113 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00004000         xr
+SRAM             0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD main.o
+LOAD stm32_startup.o
+
+.text           0x08000000      0x108
+ *.(.arm_vector)
+ *.(.text)
+ *.(.rodata)
+                0x08000000                        . = ALIGN (0x4)
+                0x08000000                        _etext = .
+ .text          0x08000000       0x7c main.o
+                0x08000000                delay
+                0x0800003e                main
+ .text          0x0800007c       0x8c stm32_startup.o
+                0x0800007c                Reset_Handler
+                0x08000100                EXTI4_15
+                0x08000100                HardFault_Handler
+                0x08000100                FLASH
+                0x08000100                ADC
+                0x08000100                NMI_Handler
+                0x08000100                USART2
+                0x08000100                I2C1
+                0x08000100                WWDG
+                0x08000100                TIM3
+                0x08000100                SPI1
+                0x08000100                TIM17
+                0x08000100                EXTI2_3
+                0x08000100                TIM15
+                0x08000100                PendSV
+                0x08000100                DMA_CH1
+                0x08000100                USB
+                0x08000100                I2C2
+                0x08000100                Default_Handler
+                0x08000100                RCC
+                0x08000100                TIM6
+                0x08000100                SPI2
+                0x08000100                TIM1_CC
+                0x08000100                SVCall
+                0x08000100                TIM16
+                0x08000100                DMA_CH2_3
+                0x08000100                RTC
+                0x08000100                TIM14
+                0x08000100                USART3_4_5_6
+                0x08000100                USART1
+                0x08000100                EXTI0_1
+                0x08000100                SysTick
+                0x08000100                TIM1_BRK_UP_TRG_COM
+                0x08000100                DMA_CH4_5
+                0x08000108                        _la_data = LOADADDR (.data)
+
+.glue_7         0x08000108        0x0
+ .glue_7        0x08000108        0x0 linker stubs
+
+.glue_7t        0x08000108        0x0
+ .glue_7t       0x08000108        0x0 linker stubs
+
+.vfp11_veneer   0x08000108        0x0
+ .vfp11_veneer  0x08000108        0x0 linker stubs
+
+.v4_bx          0x08000108        0x0
+ .v4_bx         0x08000108        0x0 linker stubs
+
+.iplt           0x08000108        0x0
+ .iplt          0x08000108        0x0 main.o
+
+.rel.dyn        0x08000108        0x0
+ .rel.iplt      0x08000108        0x0 main.o
+
+.data           0x20000000        0x0 load address 0x08000108
+                0x20000000                        _sdata = .
+ *.(.data)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _edata = .
+ .data          0x20000000        0x0 main.o
+ .data          0x20000000        0x0 stm32_startup.o
+
+.igot.plt       0x20000000        0x0 load address 0x08000108
+ .igot.plt      0x20000000        0x0 main.o
+
+.arm_vector     0x20000000       0x9c load address 0x08000108
+ .arm_vector    0x20000000       0x9c stm32_startup.o
+                0x20000000                vectors
+
+.bss            0x2000009c        0x0 load address 0x080001a4
+                0x2000009c                        _sbss = .
+ *.(.bss)
+                0x2000009c                        . = ALIGN (0x4)
+                0x2000009c                        _ebss = .
+ .bss           0x2000009c        0x0 main.o
+ .bss           0x2000009c        0x0 stm32_startup.o
+OUTPUT(final.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 main.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 stm32_startup.o
+
+.ARM.attributes
+                0x00000000       0x2e
+ .ARM.attributes
+                0x00000000       0x2e main.o
+ .ARM.attributes
+                0x0000002e       0x2e stm32_startup.o
